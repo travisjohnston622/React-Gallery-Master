@@ -1,15 +1,15 @@
 const galleryItems = [
     {
         id: 1, 
-        title: 'Billy goat',
-        path: 'images/goat_small.jpg',
-        description: 'Photo of a goat taken at Glacier National Park.',
+        title: 'American Black Duck',
+        path: 'images/Black_Duck.jpg',
+        description: 'Photo of an American Black Duck.',
         likes: 0,
     },
 
     {
         id: 2,
-        title: 'Cotton Tops',
+        title: 'Cotton_Tops',
         path: 'Cotton Tops.jpeg',
         description: 'Photo of a drake and hen american wigeon ducks.',
         likes: 0
@@ -17,7 +17,7 @@ const galleryItems = [
 
     {
         id: 3,
-        title: 'Green Head',
+        title: 'Green_Head',
         path: 'Mallard Drake.jpg',
         description: 'Photo of a drake mallard duck.',
         likes: 0,
@@ -26,7 +26,7 @@ const galleryItems = [
     {
         id: 4,
         title: 'Sprig',
-        path: 'Pintail Drake.jpg',
+        path: 'Pintail_Drake.jpg',
         description: 'Photo of a drake pintail duck.',
         likes: 0
     },
