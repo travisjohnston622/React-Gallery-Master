@@ -2,6 +2,8 @@ img {
   max-width: 100%;
   width: 400px;
   height: 400px;
+  border: 2px solid black;
+  margin: 17px;
   
 }
 
@@ -9,8 +11,20 @@ img {
     border: 2px solid green;
     padding: 30px;
     margin: 60px;
-    width: 500px;
-    height: 500px;
+    width: 530px;
+    height: 530px;
     display: inline-block;
-    vertical-align: top;
+    text-align: center;
+}
+
+.like-btn {
+    border: .05px solid darkblue;
+    font-size: 20px;
+
+ 
+}
+
+.thumbs-up{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

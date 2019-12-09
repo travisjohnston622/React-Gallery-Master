@@ -25,8 +25,8 @@ class GalleryListItem extends Component {
                     {imageEl}
                 </div>
 
-                <p>Like: {this.props.item.likes}</p>
-                <button onClick={() => {this.props.putGallery(this.props.item.id)}}>Like!</button>
+                <p className= "thumbs-up"> Like: {this.props.item.likes}</p>
+                <button className="like-btn" onClick={() => {this.props.putGallery(this.props.item.id)}}>Like!</button>
             </div>
         )
     }
