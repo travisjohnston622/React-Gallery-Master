@@ -1,6 +1,6 @@
 const galleryItems = [
     {
-        id: 1, 
+        id: 1,
         title: 'American Black Duck',
         path: 'images/Black_Duck.jpg',
         description: 'Photo of an American Black Duck.',

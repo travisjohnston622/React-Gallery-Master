@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import GalleryList from '../GallaryList/GalleryList';
+import GalleryList from '../GalleryList/GalleryList';
+
 class App extends Component {
   state = {
     galleryItems: []
@@ -14,7 +15,7 @@ class App extends Component {
   getGallery = () => {
     axios({
       method: 'GET',
-      url: '/gallery'
+      url: '/gallery',
     })
       .then((response) => {
         this.setState({
@@ -28,6 +29,19 @@ class App extends Component {
       })
   }
 
+  likeImage = (id) => {
+    axios({
+      method: 'PUT',
+      url: '/gallery/like/:id'
+    })
+      .then((response) => {
+        console.log(response);
+        this.getGallery();
+      })
+      .catch((err) => {
+        console.warn(err);
+      })
+  }
 
   render() {
 
@@ -37,8 +51,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        <GalleryList />
-
+        <GalleryList galleryItems={this.state.galleryItems} likeImage={this.likeImage} />
       </div>
     );
   }
