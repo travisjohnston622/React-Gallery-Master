@@ -10,7 +10,7 @@ const galleryItems = [
     {
         id: 2,
         title: 'Cotton_Tops',
-        path: 'Cotton Tops.jpeg',
+        path: 'images/Cotton_Tops.jpeg',
         description: 'Photo of a drake and hen american wigeon ducks.',
         likes: 0
     },
@@ -18,7 +18,7 @@ const galleryItems = [
     {
         id: 3,
         title: 'Green_Head',
-        path: 'Mallard Drake.jpg',
+        path: 'images/Mallard_Drake.jpg',
         description: 'Photo of a drake mallard duck.',
         likes: 0,
     },
@@ -26,7 +26,7 @@ const galleryItems = [
     {
         id: 4,
         title: 'Sprig',
-        path: 'Pintail_Drake.jpg',
+        path: 'images/Pintail_Drake.jpg',
         description: 'Photo of a drake pintail duck.',
         likes: 0
     },
