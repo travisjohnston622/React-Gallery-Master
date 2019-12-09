@@ -5,7 +5,7 @@ import GalleryList from '../GalleryList/GalleryList';
 
 class App extends Component {
   state = {
-    galleryItems: []
+    galleryData: []
   }
 
   componentDidMount() {
@@ -19,20 +19,18 @@ class App extends Component {
     })
       .then((response) => {
         this.setState({
-          galleryItems: response.data
-        }, () => {
-          console.log(this.state);
-        });
+          galleryData: response.data
+        })
       })
       .catch((err) => {
         console.warn(err);
       })
   }
 
-  likeImage = (id) => {
+  putGallery = (id) => {
     axios({
       method: 'PUT',
-      url: '/gallery/like/:id'
+      url: '/gallery/like/'+ id
     })
       .then((response) => {
         console.log(response);
@@ -51,7 +49,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        <GalleryList galleryItems={this.state.galleryItems} likeImage={this.likeImage} />
+        <GalleryList galleryData={this.state.galleryData} putGallery={this.putGallery} />
       </div>
     );
   }

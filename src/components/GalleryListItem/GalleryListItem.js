@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
 
 class GalleryListItem extends Component {
+
+        state = {
+            showImage: true
+        }
    
+            toggleImage = (event) => {
+                this.setState ({
+                  showImage:!this.state.showImage
+            })
+        }
     render() {
+        let imageEl = <img src={this.props.item.path} alt={this.props.item.description} />;
+
+        if(!this.state.showImage) {
+            imageEl = <p>{this.props.item.description}</p>
+        }
+
         return (
-            <div>
-                <p>
-                    {this.props.galleryItem.id} 
-                    {this.props.galleryItem.title}
-                    {this.props.galleryItem.path}
-                    {this.props.galleryItem.description}
-                    {this.props.galleryItem.likes}
-                </p>
-                <button onClick={() => this.props.likeImage(this.props.galleryItem.id)}>Like!</button>
+            <div className="imageContainer">
+                <div onClick={this.toggleImage}>
+                    {imageEl}
+                </div>
+
+                <p>Like: {this.props.item.likes}</p>
+                <button onClick={() => {this.props.putGallery(this.props.item.id)}}>Like!</button>
             </div>
         )
     }

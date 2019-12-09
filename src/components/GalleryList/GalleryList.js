@@ -13,10 +13,13 @@ class GalleryList extends Component {
             <div>
                 <p>{duckArray}</p>
                 <img
-                    style={{ width: 200, height: 200 }}
-                    src={'images/' + this.props.galleryItem.path}
-                    alt={''}
+                style={{width: 200, height: 200}}
+                src={'images/' + this.props.galleryItem.path}
+                alt={''}
                 />
+                <img>Cotton_Tops.jpg</img>
+                <img>Mallard_Drake.jpg</img>
+                <img>Pintail_Drake.jpg</img>
             </div>
         )
     }
