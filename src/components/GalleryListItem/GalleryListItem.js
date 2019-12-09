@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './GalleryListItem.css';
 
 class GalleryListItem extends Component {
 
@@ -19,7 +20,7 @@ class GalleryListItem extends Component {
         }
 
         return (
-            <div className="imageContainer">
+            <div className="cell">
                 <div onClick={this.toggleImage}>
                     {imageEl}
                 </div>

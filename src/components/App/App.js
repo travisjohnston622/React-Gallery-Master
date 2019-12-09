@@ -33,7 +33,6 @@ class App extends Component {
       url: '/gallery/like/'+ id
     })
       .then((response) => {
-        console.log(response);
         this.getGallery();
       })
       .catch((err) => {
@@ -49,6 +48,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
+        <h2>The beauty of ducks!</h2>
         <GalleryList galleryData={this.state.galleryData} putGallery={this.putGallery} />
       </div>
     );
