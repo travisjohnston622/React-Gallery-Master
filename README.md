@@ -1,9 +1,15 @@
-# Project Name
+# Gallery of My Life
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+This responsive mobile-first site displays cards on a grid that collapses using breakpoints.
 
-## Description
+The cards hold a photo that can be clicked to reveal a description. Like buttons update counter.
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Built in React and styled with Bootstrap and CSS. Node server running Express with GET and POST routes.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/github-finalization-assignment).
+# Installation
+npm install
+npm run server
+npm run client
+
+#License
+MIT
